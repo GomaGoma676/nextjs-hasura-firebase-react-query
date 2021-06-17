@@ -7,15 +7,11 @@ const TaskList: VFC = () => {
   if (status === 'loading') return <div>{'Loading...'}</div>
   if (status === 'error') return <div>{'Error'}</div>
   return (
-    <div>
+    <ul>
       {data?.map((task) => (
-        <div key={task.id}>
-          <ul>
-            <TaskItemMemo task={task} />
-          </ul>
-        </div>
+        <TaskItemMemo key={task.id} task={task} />
       ))}
-    </div>
+    </ul>
   )
 }
 export const TaskListMemo = memo(TaskList)

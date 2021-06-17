@@ -7,15 +7,11 @@ const NewsList: VFC = () => {
   if (status === 'loading') return <div>{'Loading...'}</div>
   if (status === 'error') return <div>{'Error'}</div>
   return (
-    <div>
+    <ul>
       {data?.map((news) => (
-        <div key={news.id}>
-          <ul>
-            <NewsItemMemo news={news} />
-          </ul>
-        </div>
+        <NewsItemMemo key={news.id} news={news} />
       ))}
-    </div>
+    </ul>
   )
 }
 export const NewsListMemo = memo(NewsList)
