@@ -10,7 +10,7 @@
     yarn add @reduxjs/toolkit react-redux
     yarn add -D @types/react-redux
 ### 1-4.  各種moduleのインストール
-    yarn add firebase universal-cookie @heroicons/react
+    yarn add firebase@8.10.0 universal-cookie @heroicons/react
     yarn add react-query react-query-devtools graphql graphql-request
 ### 1-5.  prettierの設定 : settingsでRequire Config + Format On Saveにチェック
     touch .prettierrc
